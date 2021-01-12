@@ -1,0 +1,52 @@
+
+.poster-placeholder{
+    position: relative;
+}
+.poster-placeholder img{
+    background-color: black;
+    width: 250px;
+    height: 400px;
+    border-radius: 5px;
+    transition: .5s ease;
+    object-fit: cover;
+}
+.overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: .3s ease;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.overlay button{
+    padding: .5em 1em;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(190, 18, 18);
+    margin-left: 10px;
+    color: white;
+}
+.poster-placeholder:hover .poster-placeholder img{
+    opacity: 0.6;
+}
+.poster-placeholder:hover .overlay{
+    opacity: 1;
+}
+/* .movie-details{
+    position: absolute;
+    bottom: 10%;
+    left: 20%;
+} */
+.title{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    width: 250px;
+}
+.release-year{
+    color: grey;
+    font-size: 12px;
+    margin-top: -10px;
+    text-align: left;
+}
