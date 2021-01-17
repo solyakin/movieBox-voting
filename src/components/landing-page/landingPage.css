@@ -1,0 +1,79 @@
+.homepage{
+    width: 100%;
+    height: 100vh;
+}
+header{
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+/* .navbar-nav{
+    display: flex;
+    align-items: flex-end;
+} */
+.swiper-slide img{
+    width: 100%;
+    height: 100vh; 
+    object-fit: cover;
+    position: relative;
+}
+.form-container{
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    height: 100vh;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.form{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 80%;
+}
+.form h2{
+    color: white;
+    font-size: clamp(1.7rem, 4vw, 4.5rem);
+    margin-bottom: 1em;
+    text-align: center;
+}
+.word-style{
+    color: #ffcc29;
+    font-size: clamp(1.7rem, 4vw, 4.5rem);
+}
+.form input{
+    width: min(700px, 85%, 70vh, 60ch);
+    /* width: clamp(20rem, 70%, 22rem); */
+    padding-top: .8em;
+    padding-bottom: .8em;
+    border-radius: 3px;
+    border: none;
+    background-color: white;
+    color: black;
+    outline-style: none; 
+    margin-bottom: 10px;
+}
+
+.form button{
+    padding-top: .8em;
+    padding-bottom: .8em;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(190, 18, 18);
+    margin-left: 10px;
+    color: white;
+}
+.form-container input:active, .form-container button:active{
+    outline: none;
+}
+@media only screen  and (max-width:650px){
+    .form h2{
+        margin-bottom: 4rem;
+    }
+    
+}
