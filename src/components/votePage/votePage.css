@@ -1,0 +1,46 @@
+.remove-btn{
+    padding: .5em 1em;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(190, 18, 18);
+    color: white;
+    display: block;
+    left: 0;
+}
+.card-body img{
+    height: 350px;
+    width: 250px;
+}
+.nominee-details{
+    margin-left: 20px;
+}
+.row{
+    position: relative;
+}
+.alert-shown {
+    opacity: 1;
+    transition: all 250ms linear;
+    background-color: rgb(228, 64, 64);
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    margin: 0px auto;
+    position: absolute;
+    top: 20px;
+    z-index: 99;
+}
+  
+.alert-hidden {
+opacity: 0;
+transition: all 250ms linear;
+}
+@media only screen and (max-width: 480px){
+    .card-body img{
+        width: 230px;
+        height: 270px;
+    }
+    .nominee-details{
+        margin-left: 40px;
+    }
+
+}
